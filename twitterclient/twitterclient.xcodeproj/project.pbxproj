@@ -8,20 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		3F18681722198BF2004F6E00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F18681622198BF2004F6E00 /* AppDelegate.swift */; };
-		3F18681922198BF2004F6E00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F18681822198BF2004F6E00 /* ViewController.swift */; };
-		3F18681C22198BF2004F6E00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F18681A22198BF2004F6E00 /* Main.storyboard */; };
 		3F18681E22198BF8004F6E00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F18681D22198BF8004F6E00 /* Assets.xcassets */; };
 		3F18682122198BF8004F6E00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F18681F22198BF8004F6E00 /* LaunchScreen.storyboard */; };
+		3F18682A2219995C004F6E00 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1868292219995B004F6E00 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F18681322198BF2004F6E00 /* twitterclient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twitterclient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F18681622198BF2004F6E00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F18681822198BF2004F6E00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3F18681B22198BF2004F6E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F18681D22198BF8004F6E00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F18682022198BF8004F6E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F18682222198BF8004F6E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F1868292219995B004F6E00 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +52,21 @@
 		3F18681522198BF2004F6E00 /* twitterclient */ = {
 			isa = PBXGroup;
 			children = (
+				3F18682822199863004F6E00 /* ViewControllers */,
 				3F18681622198BF2004F6E00 /* AppDelegate.swift */,
-				3F18681822198BF2004F6E00 /* ViewController.swift */,
-				3F18681A22198BF2004F6E00 /* Main.storyboard */,
 				3F18681D22198BF8004F6E00 /* Assets.xcassets */,
 				3F18681F22198BF8004F6E00 /* LaunchScreen.storyboard */,
 				3F18682222198BF8004F6E00 /* Info.plist */,
 			);
 			path = twitterclient;
+			sourceTree = "<group>";
+		};
+		3F18682822199863004F6E00 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F1868292219995B004F6E00 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +129,6 @@
 			files = (
 				3F18682122198BF8004F6E00 /* LaunchScreen.storyboard in Resources */,
 				3F18681E22198BF8004F6E00 /* Assets.xcassets in Resources */,
-				3F18681C22198BF2004F6E00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +139,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F18681922198BF2004F6E00 /* ViewController.swift in Sources */,
 				3F18681722198BF2004F6E00 /* AppDelegate.swift in Sources */,
+				3F18682A2219995C004F6E00 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3F18681A22198BF2004F6E00 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F18681B22198BF2004F6E00 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3F18681F22198BF8004F6E00 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
