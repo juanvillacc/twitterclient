@@ -9,7 +9,9 @@
 import UIKit
 
 class MainViewController: UIViewController {
-    
+    let myActivityIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
+    var tweets: [Tweet] = [Tweet]()
+    var selectedIndexPath: IndexPath?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
