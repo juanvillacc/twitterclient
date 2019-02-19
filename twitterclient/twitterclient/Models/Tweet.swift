@@ -16,17 +16,4 @@ struct Tweet {
     let retweetsCount: String
     let elapsedTime: String
 }
-/*extension Tweet: Mappable {
-    
-    init?(map: Map) {
-    }
-    
-    mutating func mapping(map: Map) {
-        id       <- map["id"]
-        content     <- map["content"]
-        profileImageUrl     <- map["profileImageUrl"]
-        userName     <- map["userName"]
-        retweetsCount    <- map["retweetsCount"]
-        elapsedTime        <- map["elapsedTime"]
-    }
-}*/
+

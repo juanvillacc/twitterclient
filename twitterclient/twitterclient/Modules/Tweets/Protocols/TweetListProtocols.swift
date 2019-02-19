@@ -21,7 +21,6 @@ protocol TweetListPresenterProtocol: class {
     var wireframe: TweetListWireFrameProtocol? {get set}
     
     func viewDidLoad()
-    func showTweetSelection(with tweet: Tweet, from view: UIViewController)
 }
 
 protocol TweetListInputInteractorProtocol: class {
@@ -37,6 +36,5 @@ protocol TweetListOutputInteractorProtocol: class {
 
 protocol TweetListWireFrameProtocol: class {
     //Presenter -> Wireframe
-    func pushToTweetDetail(with tweet: Tweet,from view: UIViewController)
     static func createTweetListModule(tweetListRef: TweetListView)
 }

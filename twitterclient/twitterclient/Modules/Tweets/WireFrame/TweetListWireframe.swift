@@ -10,12 +10,6 @@ import UIKit
 
 class TweetListWireframe: TweetListWireFrameProtocol {
     
-    func pushToTweetDetail(with tweet: Tweet,from view: UIViewController) {
-      /*  let fruitDetailViewController = view.storyboard?.instantiateViewController(withIdentifier: "TweetDetailView") as! TweetDetailView
-        TweetDetailWireFrame.createTweetDetailModule(with: tweetDetailViewController, and: tweet)
-        view.navigationController?.pushViewController(fruitDetailViewController, animated: true)*/
-    }
-    
     class func createTweetListModule(tweetListRef: TweetListView) {
         let presenter: TweetListPresenterProtocol & TweetListOutputInteractorProtocol = TweetListPresenter()
         

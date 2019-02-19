@@ -18,10 +18,8 @@ class TweetListInteractor: TweetListInputInteractorProtocol {
     
     func getAllTweetDetail() -> [Tweet] {
         var tweetList = [Tweet]()
-        /*let allFruitDetail = [[String: String]] //TODO FECHH THE DATA
-        for item in allFruitDetail {
-            fruitList.append(Tweet(attributes: item))
-        }*/
+        //TODO FECHH THE DATA
+        
         return tweetList
     }
 }

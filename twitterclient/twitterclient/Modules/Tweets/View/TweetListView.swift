@@ -17,6 +17,15 @@ class TweetListView: UIViewController,TweetListViewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let barHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height
+        let displayWidth: CGFloat = self.view.frame.width
+        let displayHeight: CGFloat = self.view.frame.height
+        tweetTblView = UITableView(frame: CGRect(x: 0, y: barHeight, width: displayWidth, height: displayHeight - barHeight))
+        tweetTblView.register(UITableViewCell.self, forCellReuseIdentifier: "tweetCell")
+        tweetTblView.dataSource = self
+        tweetTblView.delegate = self
+        self.view.addSubview(tweetTblView)
+        
         TweetListWireframe.createTweetListModule(tweetListRef: self)
         presenter?.viewDidLoad()
     }
@@ -48,7 +57,7 @@ extension TweetListView: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter?.showTweetSelection(with: tweetList[indexPath.row], from: self)
+        
     }
     
 }

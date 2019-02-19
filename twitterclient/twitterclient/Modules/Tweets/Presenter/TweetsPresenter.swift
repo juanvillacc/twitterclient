@@ -15,10 +15,6 @@ class TweetListPresenter: TweetListPresenterProtocol {
     var interactor: TweetListInputInteractorProtocol?
     var presenter: TweetListPresenterProtocol?
     
-    func showTweetSelection(with tweet: Tweet, from view: UIViewController) {
-        wireframe?.pushToTweetDetail(with: tweet, from: view)
-    }
-    
     func viewDidLoad() {
         self.loadTweetList()
     }
