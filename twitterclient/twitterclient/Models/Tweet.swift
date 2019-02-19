@@ -8,11 +8,25 @@
 
 import Foundation
 
-struct Tweet: Codable {
-    let id: Int
+struct Tweet {
+    let id: String
     let content: String
-    let profileIcon: String?
+    let profileImageUrl: String?
     let userName: String
     let retweetsCount: String
     let elapsedTime: String
 }
+/*extension Tweet: Mappable {
+    
+    init?(map: Map) {
+    }
+    
+    mutating func mapping(map: Map) {
+        id       <- map["id"]
+        content     <- map["content"]
+        profileImageUrl     <- map["profileImageUrl"]
+        userName     <- map["userName"]
+        retweetsCount    <- map["retweetsCount"]
+        elapsedTime        <- map["elapsedTime"]
+    }
+}*/
